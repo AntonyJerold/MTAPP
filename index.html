@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+  <head>
+    <title>User Details</title>
+    <link rel="stylesheet" href="css\styles.css">
+  </head>
+  <body>
+    <div class="container" id="container">
+      <form autocomplete="off" name="user_form" class="post_form">
+
+        <section id="step_1">
+          <h2>Personal Details</h2>
+          <label for="first_name">First Name</label><br>
+          <input type="text" id="first_name" name="first_name"><br>
+          <label for="last_name">Last Name</label><br>
+          <input type="text" id="last_name" name="last_name"><br>
+          <label for="gender">Gender:</label><br>
+          <input type="radio" name="gender" value="male" > Male
+          <input type="radio" name="gender" value="female" > Female
+          <input type="radio" name="gender" value="other" > Other
+          <br><label for="address">Address</label><br>
+          <input type="text" id="address" name="address" ><br>
+          <label for="county">Country</label><br>         
+          <input type="text" id="country" name="country" ><br>
+          <label for="state">State</label><br>      
+          <input type="text" id="state" name="state" ><br>
+          <label for="phone">Phone Number</label><br>
+          <input type="text" id="phone" name="phone" ><br>
+          <label for="zip_code">Zip Code</label><br>
+          <input type="text" id="zip_code" name="zip_code" ><br>
+          <div class="btn">
+            <button type="button" id="next_btn_1">Next</button>
+          </div>
+        </section>
+
+        <section id="step_2">
+          <h2>Career Details</h2>
+          <label for="company_name">Company Name</label><br>
+          <input type="text" id="company_name" name="company_name" >  <br>
+          <label for="email">Email Address:</label><br>
+          <input type="text" name="email" id="email"  pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" ><br>
+          <label for="year_exp">Year of Experience:</label><br>
+          <input type="text" id="year_exp" name="year_exp" ><br>
+          <input type="checkbox" id="terms" name="terms" value="1">Accept Terms And Condition<br>
+          <div class="btn">
+            <button type = "button" id="back_btn_1">Back</button>
+            <button type="button" id="next_btn_2">Next</button>
+          </div>
+        </section>
+
+        <section id="step_3">
+          <h2>Verfiy with Email</h2>
+          <label for="verify_code">Verification Code</label><br>
+          <input type="text" id="verify_code" name="verify_code" > <br>
+          <div class="btn">   
+            <button type = "button" id="back_btn_2">Back</button>     
+            <button type = "button" id="submit">Submit</button>
+          </div>
+        </section>
+      </form>
+
+      <div class="step_prg_row">
+        <div id="progress"></div>
+        <div class="step_prog_col">Step 1</div>
+        <div class="step_prog_col">Step 2</div>
+        <div class="step_prog_col">Step 3</div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </body>
+</html>
